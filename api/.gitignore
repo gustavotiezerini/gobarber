@@ -1,6 +1,7 @@
+.DS_Store
 .idea/
 .vscode/
-nome_modules/
+node_modules/
 build/
 temp/
 .env
