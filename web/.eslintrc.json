@@ -39,6 +39,8 @@
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "@typescript-eslint/ban-types": "off",
       "import/prefer-default-export": "off",
+      "import/no-duplicates": "off",
+      "camelcase": "off",
       "import/extensions": [
         "error",
         "ignorePackages",

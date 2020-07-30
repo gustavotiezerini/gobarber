@@ -52,7 +52,7 @@ class SendForgotPasswordEmailService {
         file: forgotPasswordTemplate,
         variables: {
           name: user.name,
-          link: `${process.env.APP_WEWB_URL}/reset_password?tojen=${token}`,
+          link: `${process.env.APP_WEWB_URL}/reset-password?tojen=${token}`,
         },
       },
     });
