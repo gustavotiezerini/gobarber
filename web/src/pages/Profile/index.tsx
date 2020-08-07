@@ -57,14 +57,22 @@ const Profile: React.FC = () => {
         });
         await schema.validate(data, { abortEarly: false });
 
+        const {
+          name,
+          email,
+          old_password,
+          password,
+          password_confirmation,
+        } = data;
+
         const formData = {
-          name: data.name,
-          email: data.email,
-          ...(data.old_password
+          name,
+          email,
+          ...(old_password
             ? {
-                old_password: data.old_password,
-                password: data.password,
-                password_confirmation: data.password_confirmation,
+                old_password,
+                password,
+                password_confirmation,
               }
             : {}),
         };
